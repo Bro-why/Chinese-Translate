@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chinese Translate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header>
+      <div class="eyebrow">School & learning</div>
+      <h1>Chinese Translate</h1>
+      <p class="subtitle">Understand the words. Understand what they mean.</p>
+    </header>
+
+    <section class="safety" aria-label="Safety reminder"><strong>Important:</strong> Check medical, emergency, food-allergy, and safety information with a trusted adult or professional.</section>
+
+    <section class="translator-card">
+      <div class="card-heading"><div><span class="step">1</span><h2>Type words or a phrase</h2></div><span class="language-pill">English → 中文</span></div>
+      <textarea id="translation-input" placeholder="Example: Please bring your homework tomorrow." aria-label="Words to translate"></textarea>
+      <button id="translate-button" class="primary">Translate and explain</button>
+      <div id="status" class="status" role="status">Ready</div>
+    </section>
+
+    <section class="answer-card">
+      <div class="card-heading"><div><span class="step">2</span><h2>Family-friendly answer</h2></div><span class="difference">Translation + summary</span></div>
+      <div id="answer" class="answer empty">Your Chinese translation and simple summary will appear here.</div>
+      <button id="second-button" class="secondary" hidden>Give me a second version</button>
+    </section>
+
+    <section class="saved-card">
+      <div class="card-heading"><div><span class="step">3</span><h2>Saved on this computer</h2></div></div>
+      <p class="muted">Saves on this computer only for now.</p>
+      <ul id="saved-list"></ul>
+    </section>
+  </main>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
