@@ -8,6 +8,12 @@
 
 The AI key comes from `getKey()` in `server/getKey.js`. The AI request lives in `server/askAI.js`, uses model `gpt-5.6-luna`, and keeps credentials on the server.
 
+## Vercel
+
+Vercel uses the built-in Node serverless function at `api/translate.js`; the page files stay at the project root. Deploy the project as-is from GitHub. In Vercel Project Settings → Environment Variables, add `KEYGEN_URL` and `KEYGEN_TOKEN` for the environments you use. No OpenAI key is added to Vercel: the server gets the AI key only through `getKey()`.
+
+The local command remains `node server.js`. Browser saving still uses localStorage and is not uploaded to Vercel.
+
 ## What’s done
 
 - Version 1 MVP: translate a phrase into Chinese, receive a simple family-friendly summary, and request a second version.
