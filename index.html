@@ -9,29 +9,29 @@
 <body>
   <main class="app-shell">
     <header>
-      <div class="eyebrow">School & learning</div>
+      <div class="header-row"><div class="eyebrow" data-i18n="eyebrow">School & learning</div><button id="language-toggle" class="language-toggle" type="button">中文</button></div>
       <h1>Chinese Translate</h1>
-      <p class="subtitle">Understand the words. Understand what they mean.</p>
+      <p class="subtitle" data-i18n="subtitle">Understand the words. Understand what they mean.</p>
     </header>
 
-    <section class="safety" aria-label="Safety reminder"><strong>Important:</strong> Check medical, emergency, food-allergy, and safety information with a trusted adult or professional.</section>
+    <section class="safety" data-i18n-aria="safetyLabel" aria-label="Safety reminder"><strong data-i18n="important">Important:</strong> <span data-i18n="safety">Check medical, emergency, food-allergy, and safety information with a trusted adult or professional.</span></section>
 
     <section class="translator-card">
-      <div class="card-heading"><div><span class="step">1</span><h2>Type words or a phrase</h2></div><span class="language-pill">English → 中文</span></div>
-      <textarea id="translation-input" placeholder="Example: Please bring your homework tomorrow." aria-label="Words to translate"></textarea>
-      <button id="translate-button" class="primary">Translate and explain</button>
+      <div class="card-heading"><div><span class="step">1</span><h2 data-i18n="inputTitle">Type words or a phrase</h2></div><span class="language-pill" data-i18n="direction">English → 中文</span></div>
+      <textarea id="translation-input" data-i18n-placeholder="inputPlaceholder" data-i18n-label="inputLabel" placeholder="Example: Please bring your homework tomorrow." aria-label="Words to translate"></textarea>
+      <button id="translate-button" class="primary" data-i18n="translate">Translate and explain</button>
       <div id="status" class="status" role="status">Ready</div>
     </section>
 
     <section class="answer-card">
-      <div class="card-heading"><div><span class="step">2</span><h2>Family-friendly answer</h2></div><span class="difference">Translation + summary</span></div>
-      <div id="answer" class="answer empty">Your Chinese translation and simple summary will appear here.</div>
-      <button id="second-button" class="secondary" hidden>Give me a second version</button>
+      <div class="card-heading"><div><span class="step">2</span><h2 data-i18n="answerTitle">Family-friendly answer</h2></div><span class="difference" data-i18n="difference">Translation + summary</span></div>
+      <div id="answer" class="answer empty" data-i18n="answerPlaceholder">Your Chinese translation and simple summary will appear here.</div>
+      <button id="second-button" class="secondary" hidden data-i18n="secondVersion">Give me a second version</button>
     </section>
 
     <section class="saved-card">
-      <div class="card-heading"><div><span class="step">3</span><h2>Saved on this computer</h2></div></div>
-      <p class="muted">Saves on this computer only for now.</p>
+      <div class="card-heading"><div><span class="step">3</span><h2 data-i18n="savedTitle">Saved on this computer</h2></div></div>
+      <p class="muted" data-i18n="savedNote">Saves on this computer only for now.</p>
       <ul id="saved-list"></ul>
     </section>
   </main>
