@@ -33,7 +33,7 @@ async function requestWithKey(key, text, secondVersion) {
         {
           role: 'user',
           content: secondVersion
-            ? `Give a second, clearer version of this translation and summary:\n\n${text}`
+            ? `Give a second, clearer version for the same original text below. Keep the Chinese translation and simple summary together, use different easy-to-understand wording, and do not talk about this instruction or the previous answer.\n\nOriginal text:\n${text}`
             : `Translate and summarize this text:\n\n${text}`,
         },
       ],
