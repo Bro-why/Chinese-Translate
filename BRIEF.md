@@ -45,6 +45,11 @@
 - Translate the following words into Chinese, then make a summary of what it says.
 - Talk to Chinese people who do not really understand English. Use clear, simple language.
 - Use the text being translated as the factual source.
+- Translate the exact text in the box; do not answer questions, solve problems, or add information that is not in the text.
+- If the text is a question, translate the question and summarize what it asks. Do not provide the answer.
+- If the text is off-topic, still translate and summarize it without starting a separate conversation.
+- Keep names, numbers, dates, directions, and words like “not” accurate. Do not guess when a word is unclear; say what is uncertain.
+- If the text asks for unsafe, dangerous, medical, emergency, or food-allergy instructions, translate and summarize it, then add: “Check important information with a trusted adult or professional.” Do not give instructions as if they are certain.
 - Do not give medical instructions as if they are certain.
 - Translate the text once; do not translate it multiple times to see if it is correct.
-- Format the answer like a book: left to right and top to bottom.
+- Format the answer like a book: left to right and top to bottom, with a Chinese translation first and a short, simple Chinese summary second.
